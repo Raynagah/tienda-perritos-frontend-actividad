@@ -42,7 +42,7 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/frontend-tienda-perritos:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/frontend:v${{ github.run_number }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/frontend-tienda-perritos:v${{ github.run_number }}
             ${{ secrets.ECR_REPO_URL_FRONTEND }}:latest
 
       # 4. Despliegue en AWS vía SSM
